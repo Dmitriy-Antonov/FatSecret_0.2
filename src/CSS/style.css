@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 500px;
+    background: url(https://www.youthlandacademy.com/wp-content/uploads/2019/03/March-Blog-1-Feature-Image-1024x687.png);
+    background-size: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* Навигация */
+.nav-cont {
+    width: 1500px;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: 5px;
+    border: 5px solid ghostwhite;
+    border-radius: 25px;
+}
+
+.icon{
+    width: 150px;
+    height: 41px;
+    background: url(../imgs/logo.fw.png);
+    background-size: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+    position: relative;
+    top: 1px;
+}
+
+.menu{
+    width: 30px;
+    height: 31px;
+    background: url(../imgs/menu.webp);
+    background-size: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+    position: relative;
+    right: 5px;
+}
+
+/* Приветственная страница */
+
+.content-container {
+    width: 1500px;
+    height: 420px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(189, 189, 189);
+    border-radius: 25px;
+    position: relative;
+}
+
+.p1 {
+    width: 800px;
+    font-size: 45px;
+    color: rgb(0, 172, 0);
+    margin: auto;
+    margin-top: 20px;
+}
+
+.p2 {
+    margin-top: 20px;
+    font-size: 35px;    
+    color: rgb(0, 172, 0);
+    padding: 12px;
+
+}
+
+.qoute-1 {
+    font-size: 25px;    
+    position: absolute;
+    bottom: 0;
+        text-align: right;
+    color: rgb(0, 134, 0);
+    padding: 12px;
+}
+
+@media (max-width: 1400px) {
+}
