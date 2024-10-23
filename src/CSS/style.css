@@ -9,9 +9,18 @@
 header {
     height: 500px;
     background: url(https://www.youthlandacademy.com/wp-content/uploads/2019/03/March-Blog-1-Feature-Image-1024x687.png);
-    background-size: 100%;
+    background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 5px solid green;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* Навигация */
@@ -20,12 +29,13 @@ header {
     height: 42px;
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    /* margin: auto; */
     background-color: rgb(255, 255, 255);
     position: relative;
     top: 5px;
     border: 5px solid ghostwhite;
     border-radius: 25px;
+    overflow: hidden;
 }
 
 .icon{
@@ -47,17 +57,18 @@ header {
 	background-position: center center;
 	background-repeat: no-repeat;
     right: 5px;
-    z-index: 0;
+    z-index: 1;
 }
 
 .menu li {
-    width: 439px;
+    width: 444px;
     display: flex;
     position: relative;
     top: 6px;
     left: 30px;
     transition: 0.3s ease-out;
-    
+    opacity: 0;
+    justify-content: space-between;
 }
 
 /* Приветственная страница */
@@ -65,7 +76,7 @@ header {
 .content-container {
     width: 1100px;
     height: 420px;
-    margin: auto;
+    /* margin: auto; */
     margin-top: 20px;
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(189, 189, 189);
@@ -74,11 +85,11 @@ header {
 }
 
 .p1 {
-    width: 505px;
     font-size: 35px;
     color: rgb(0, 172, 0);
-    margin: auto;
+    /* margin: auto; */
     margin-top: 20px;
+    text-align: center;
 }
 
 .p2 {
@@ -98,11 +109,58 @@ header {
     color: rgb(0, 134, 0);
 }
 
+/* main */
+
+main {
+    height: 1000px;
+    background: url(https://avatars.mds.yandex.net/i?id=0004dd5e1b46c1de8108ea732d74322a_l-10299621-images-thumbs&n=13);
+    background-size: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-photo-img {
+    width: 300px;
+    height: 300px;
+    background: url(../imgs/e79aca4a-5a1f-4558-acc9-5bed15fb9b1b.jpg);
+    background-size: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.about-text-container {
+    width: 1300px;
+    height: 400px;
+    margin-top: 20px;
+    background-color: #654321;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.about-title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.about-text-container_2 {
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.my-photo-img {
+
+}
 @media (max-width: 1400px) {
-    header {
-        height: 500px;
-    }
-    
     /* Навигация */
     .nav-cont {
         width: 1093px;
@@ -125,11 +183,17 @@ header {
     }
 }
 
-@media (max-width: 990px) {
-    header {
-        height: 500px;
+@media (max-width: 1100px) {
+    .nav-cont {
+        width: 859px;
     }
-    
+
+    .content-container {
+        width: 859px;
+    }
+}
+
+@media (max-width: 990px) {
     /* Навигация */
     .nav-cont {
         width: 773px;
@@ -153,9 +217,8 @@ header {
 
 @media (max-width: 770px) {
     header {
-        height: 500px;
+        height: 600px;
     }
-    
     /* Навигация */
     .nav-cont {
         width: 601px;
@@ -165,6 +228,7 @@ header {
     
     .content-container {
         width: 601px;
+        height: 480px;
     }
     
     .p1 {
@@ -173,6 +237,37 @@ header {
     
     .p2 {
         margin-top: 2px;
+        font-size: 25px;
+    }
+
+    /* Меню */
+
+    .menu li {
+
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        height: 700px;
+    }
+    /* Навигация */
+    .nav-cont {
+        width: 468px;
+    }
+
+    /* Приветственная страница */
+    
+    .content-container {
+        width: 468px;
+        height: 600px;
+    }
+
+    .p1 {
+        font-size: 25px;
+    }
+    
+    .p2 {
         font-size: 25px;
     }
 }
