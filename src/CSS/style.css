@@ -118,8 +118,7 @@ main {
 	background-position: center center;
 	background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .about-container {
@@ -130,11 +129,21 @@ main {
 .my-photo-img {
     width: 300px;
     height: 300px;
+    margin-top: 50px;
     background: url(../imgs/e79aca4a-5a1f-4558-acc9-5bed15fb9b1b.jpg);
     background-size: 100%;
 	background-position: center center;
 	background-repeat: no-repeat;
     border-radius: 50%;
+}
+
+.my-photo-img::after {
+    content: "@pfpfovich";
+    position: relative;
+    top: 330px;
+    left: 75px;
+    font-size: 30px;
+    background-color: white;
 }
 
 .about-text-container {
@@ -157,9 +166,26 @@ main {
     padding-left: 10px;
 }
 
-.my-photo-img {
-
+.my-teacher-img {
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    background: url(../imgs/photo_2020-03-10_14-58-28.jpg);
+    background-size: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+    border-radius: 50%;
 }
+
+.my-teacher-img::after {
+    content: "@Alter_Krain";
+    position: relative;
+    top: 330px;
+    left: 75px;
+    font-size: 30px;
+    background-color: white;
+}
+
 @media (max-width: 1400px) {
     /* Навигация */
     .nav-cont {
