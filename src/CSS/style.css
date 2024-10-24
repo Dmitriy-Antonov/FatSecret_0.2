@@ -111,17 +111,12 @@ a {
 
 /* main */
 
-main {
-    height: 1000px;
-    background: url(https://avatars.mds.yandex.net/i?id=0004dd5e1b46c1de8108ea732d74322a_l-10299621-images-thumbs&n=13);
-    background-size: 100%;
-	background-position: center center;
-	background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-between;
-}
-
 .about-container {
+    height: 440px;
+    background: url(https://avatars.mds.yandex.net/i?id=0004dd5e1b46c1de8108ea732d74322a_l-10299621-images-thumbs&n=13);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
 }
@@ -144,6 +139,7 @@ main {
     left: 75px;
     font-size: 30px;
     background-color: white;
+    border: 2px solid black;
 }
 
 .about-text-container {
@@ -181,9 +177,10 @@ main {
     content: "@Alter_Krain";
     position: relative;
     top: 330px;
-    left: 75px;
+    left: 59.5px;
     font-size: 30px;
     background-color: white;
+    border: 2px solid black;
 }
 
 @media (max-width: 1400px) {
@@ -206,6 +203,17 @@ main {
         margin-top: 10px;
         font-size: 25px;
     
+    }
+
+    /* О нас */
+
+    .about-container {
+        height: 580px;
+        display: block;
+    }
+
+    .about-text-container {
+        height: 520px;
     }
 }
 
@@ -264,12 +272,6 @@ main {
     .p2 {
         margin-top: 2px;
         font-size: 25px;
-    }
-
-    /* Меню */
-
-    .menu li {
-
     }
 }
 
