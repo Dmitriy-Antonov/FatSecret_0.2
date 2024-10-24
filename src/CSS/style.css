@@ -112,7 +112,6 @@ a {
 /* main */
 
 .about-container {
-    height: 440px;
     background: url(https://avatars.mds.yandex.net/i?id=0004dd5e1b46c1de8108ea732d74322a_l-10299621-images-thumbs&n=13);
     background-size: cover;
     background-position: center center;
@@ -130,6 +129,7 @@ a {
 	background-position: center center;
 	background-repeat: no-repeat;
     border-radius: 50%;
+    order: -1;
 }
 
 .my-photo-img::after {
@@ -183,16 +183,34 @@ a {
     border: 2px solid black;
 }
 
+@media (max-width: 1900px) {
+    /* main */
+
+    .about-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photos-cont {
+        display: flex;
+    }
+
+    .my-photo-img {
+        order: 0;
+    }
+}
+
 @media (max-width: 1400px) {
     /* Навигация */
     .nav-cont {
-        width: 1093px;
+        width: 859px;
     }
 
     /* Приветственная страница */
     
     .content-container {
-        width: 1093px;
+        width: 859px;
     }
     
     .p1 {
@@ -214,6 +232,17 @@ a {
 
     .about-text-container {
         height: 520px;
+    }
+
+    /* main */
+
+    .about-container {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .about-text-container {
+        order: -1;
     }
 }
 
