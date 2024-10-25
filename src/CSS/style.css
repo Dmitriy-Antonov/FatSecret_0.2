@@ -7,7 +7,7 @@
 }
 
 header {
-    height: 500px;
+    min-height: 55vh;
     background: url(https://www.youthlandacademy.com/wp-content/uploads/2019/03/March-Blog-1-Feature-Image-1024x687.png);
     background-size: cover;
 	background-position: center center;
@@ -18,14 +18,11 @@ header {
     border-bottom: 5px solid green;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
+
 
 /* Навигация */
 .nav-cont {
-    width: 1100px;
+    width: 57%;
     height: 42px;
     display: flex;
     justify-content: space-between;
@@ -38,6 +35,10 @@ a {
     overflow: hidden;
 }
 
+.nav-cont a {
+    text-decoration: none;
+    color: black;
+}
 .icon{
     width: 150px;
     height: 41px;
@@ -61,21 +62,24 @@ a {
 }
 
 .menu li {
-    width: 444px;
+    min-width: 78vh;
     display: flex;
     position: relative;
     top: 6px;
     left: 30px;
     transition: 0.3s ease-out;
     opacity: 0;
-    justify-content: space-between;
+}
+
+.menu li ul {
+    margin: 0;
 }
 
 /* Приветственная страница */
 
 .content-container {
-    width: 1100px;
-    height: 420px;
+    width: 57%;
+    min-height: 45vh;
     /* margin: auto; */
     margin-top: 20px;
     background-color: rgb(255, 255, 255);
@@ -117,25 +121,32 @@ a {
     background-position: center center;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 5px solid rgb(0, 0, 0);
+}
+
+.images-cont {
+    width: 67%;
+    display: flex;
     justify-content: space-between;
 }
 
 .my-photo-img {
     width: 300px;
     height: 300px;
-    margin-top: 50px;
+    margin-top: 25px;
     background: url(../imgs/e79aca4a-5a1f-4558-acc9-5bed15fb9b1b.jpg);
     background-size: 100%;
 	background-position: center center;
 	background-repeat: no-repeat;
     border-radius: 50%;
-    order: -1;
 }
 
 .my-photo-img::after {
     content: "@pfpfovich";
     position: relative;
-    top: 330px;
+    top: 310px;
     left: 75px;
     font-size: 30px;
     background-color: white;
@@ -143,8 +154,8 @@ a {
 }
 
 .about-text-container {
-    width: 1300px;
-    height: 400px;
+    width: 67%;
+    height: 28%;
     margin-top: 20px;
     background-color: #654321;
     color: rgb(255, 255, 255);
@@ -165,7 +176,7 @@ a {
 .my-teacher-img {
     width: 300px;
     height: 300px;
-    margin-top: 50px;
+    margin-top: 25px;
     background: url(../imgs/photo_2020-03-10_14-58-28.jpg);
     background-size: 100%;
 	background-position: center center;
@@ -176,7 +187,7 @@ a {
 .my-teacher-img::after {
     content: "@Alter_Krain";
     position: relative;
-    top: 330px;
+    top: 310px;
     left: 59.5px;
     font-size: 30px;
     background-color: white;
@@ -184,147 +195,196 @@ a {
 }
 
 @media (max-width: 1900px) {
-    /* main */
-
-    .about-container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    header {
+        min-height: 60vh;
     }
 
-    .photos-cont {
-        display: flex;
-    }
-
-    .my-photo-img {
-        order: 0;
+    .content-container {
+        min-height: 50vh;
     }
 }
 
+@media (max-width: 1600px) {
+    header {
+        min-height: 65vh;
+    }
+    .content-container {
+        min-height: 55vh;
+    }
+}
 @media (max-width: 1400px) {
-    /* Навигация */
-    .nav-cont {
-        width: 859px;
+    header {
+        min-height: 75vh;
     }
 
-    /* Приветственная страница */
-    
     .content-container {
-        width: 859px;
+        min-height: 65vh;
     }
-    
+
     .p1 {
         font-size: 35px;
     }
     
     .p2 {
         margin-top: 10px;
-        font-size: 25px;
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    header {
+        min-height: 80vh;
+    }
+
+    .content-container {
+        min-height: 70vh;
+    }
+
+    .p1 {
+        font-size: 35px;
+    }
     
-    }
-
-    /* О нас */
-
-    .about-container {
-        height: 580px;
-        display: block;
-    }
-
-    .about-text-container {
-        height: 520px;
-    }
-
-    /* main */
-
-    .about-container {
-        /* flex-direction: column; */
-        align-items: center;
-    }
-
-    .about-text-container {
-        order: -1;
+    .p2 {
+        margin-top: 5px;
+        font-size: 30px;
     }
 }
 
 @media (max-width: 1100px) {
-    .nav-cont {
-        width: 859px;
+    header {
+        min-height: 85vh;
+    }
+
+    .menu li ul {
+        margin-top: 2px;
+        font-size: 13px;
+
     }
 
     .content-container {
-        width: 859px;
+        min-height: 75vh;
     }
+
+    .p1 {
+        font-size: 35px;
+    }
+    
+    .p2 {
+        margin-top: 5px;
+        font-size: 30px;
+    }
+
+
 }
 
 @media (max-width: 990px) {
-    /* Навигация */
-    .nav-cont {
-        width: 773px;
+    header {
+        min-height: 75vh;
     }
 
-    /* Приветственная страница */
-    
-    .content-container {
-        width: 773px;
+    .menu li ul {
+        margin-top: 2px;
+        font-size: 12px;
+
     }
-    
+
+    .content-container {
+        min-height: 65vh;
+    }
+
     .p1 {
-        font-size: 35px;
+        font-size: 30px;
     }
     
     .p2 {
-        margin-top: 10px;
         font-size: 25px;
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 850px) {
     header {
-        height: 600px;
-    }
-    /* Навигация */
-    .nav-cont {
-        width: 601px;
+        min-height: 80vh;
     }
 
-    /* Приветственная страница */
-    
     .content-container {
-        width: 601px;
-        height: 480px;
+        min-height: 70vh;
     }
-    
+
     .p1 {
-        font-size: 35px;
+        font-size: 30px;
     }
     
     .p2 {
-        margin-top: 2px;
         font-size: 25px;
+    }
+
+    .qoute-1 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 770px) {
+    header {
+        min-height: 78vh;
+    }
+
+    .content-container {
+        min-height: 68vh;
+    }
+
+    .p1 {
+        font-size: 25px;
+    }
+    
+    .p2 {
+        font-size: 20px;
+    }
+
+    .qoute-1 {
+        font-size: 17px;
     }
 }
 
 @media (max-width: 600px) {
     header {
-        height: 700px;
-    }
-    /* Навигация */
-    .nav-cont {
-        width: 468px;
+        min-height: 85vh;
     }
 
-    /* Приветственная страница */
-    
     .content-container {
-        width: 468px;
-        height: 600px;
+        min-height: 75vh;
     }
 
     .p1 {
-        font-size: 25px;
+        font-size: 23px;
     }
     
     .p2 {
-        font-size: 25px;
+        font-size: 18px;
+    }
+
+    .qoute-1 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 460px) {
+    header {
+        min-height: 90vh;
+    }
+
+    .content-container {
+        min-height: 80vh;
+    }
+
+    .p1 {
+        font-size: 21px;
+    }
+    
+    .p2 {
+        font-size: 16px;
+    }
+
+    .qoute-1 {
+        font-size: 14px;
     }
 }

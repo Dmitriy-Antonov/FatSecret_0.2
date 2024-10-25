@@ -42,13 +42,53 @@
                     <p>В своей работе я подниму проблему неправильного питания. 
                         Помогу составить правильное представление о правильном питании, предоставлю инструменты для правильного составления рациона.</p>
                         <p>Спасибо за внимание!</p>
-                    </div>
                 </div>
-            <div class="photos-cont">
-                <div class="my-photo-img"></div>
-                <div class="my-teacher-img"></div>
             </div>
-        </div>    
+                <div class="images-cont">
+                    <div class="my-photo-img"></div>
+                    <div class="my-teacher-img"></div>
+                </div>
+                <br><br><br>
+        </div>
+        <div class="menu-container">
+            <div class="calorie-content">
+                Для начала необходимо расчитать Вашу суточную норму калорий.
+            </div>
+            <div class="p-1">Укажите Ваш пол:
+                <input type="radio" name="a" id="male-gender" value="male-gender"><label for="male-gender">Мужской</label>
+                <input type="radio" name="a" id="female-gender" value="female-gender"><label for="female-gender">Женский</label>
+            </div>
+            <div class="p-2">Укажите Ваш возраст (полных лет):
+                <input type="number" id="ages">
+            </div>
+            <div class="p-3">Введите Ваш вес (в кг):
+                <input type="number" id="weight">
+            </div>
+            <div class="p-4">Введите Ваш рост (в сантиметрах):
+                <input type="number" id="height">
+            </div>
+            <div class="p-5">Введите Ваш коэфициент физ. активности (узнать его можно по <a href="https://mhlife.ru/fitness/motion/pal.html">ссылке</a>):
+                <input type="number" id="activity-ratio">
+            </div>
+            <div class="p-6">Какая Ваша цель:
+                <input type="radio" name="b" id="weight-gain"><label for="weight-gain">Увеличение веса</label>
+                <input type="radio" name="b" id="slow-weight-gain"><label for="slow-weight-gain">Медленное увеличение веса</label>
+                <input type="radio" name="b" id="maintaining-weight"><label for="maintaining-weight">Сохранение нынешнего веса</label>
+                <input type="radio" name="b" id="slow-weight-loss"><label for="slow-weight-loss">Медленная потеря веса</label>
+                <input type="radio" name="b" id="weight-loss"><label for="weight-loss">Потеря веса</label>
+            </div>
+            <button onclick="calorie_calculation()">Рассчитать</button>
+            <!-- <div class="menu-title">Блюда</div>
+            <div class="breakfast-cont">
+                <div class="breakfast-p">Завтрак</div>
+            </div>
+            <div class="lunch-cont">
+                <div class="lunch-p">Обед</div>
+            </div>
+            <div class="dinner-cont">
+                <div class="dinner-p">Ужин</div>
+            </div> -->
+        </div>
     </main>
     <footer>
 
