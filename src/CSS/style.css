@@ -33,6 +33,8 @@ header {
     border: 5px solid ghostwhite;
     border-radius: 25px;
     overflow: hidden;
+    position: fixed;
+    z-index: 2;
 }
 
 .nav-cont a {
@@ -58,7 +60,6 @@ header {
 	background-position: center center;
 	background-repeat: no-repeat;
     right: 5px;
-    z-index: 1;
 }
 
 .menu li {
@@ -81,7 +82,7 @@ header {
     width: 57%;
     min-height: 45vh;
     /* margin: auto; */
-    margin-top: 20px;
+    margin-top: 62px;
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(189, 189, 189);
     border-radius: 25px;
@@ -115,6 +116,7 @@ header {
 
 /* main */
 
+/* about */
 .about-container {
     background: url(https://avatars.mds.yandex.net/i?id=0004dd5e1b46c1de8108ea732d74322a_l-10299621-images-thumbs&n=13);
     background-size: cover;
@@ -193,6 +195,127 @@ header {
     background-color: white;
     border: 2px solid black;
 }
+
+/* calculator */
+
+.calorie-content {
+    min-height: 56vh;
+    background: url(https://www.mgpu.ru/wp-content/uploads/2020/11/calculating-spousal-support-virginia.jpg);
+    background-size: cover;
+    background-position: center center;
+	background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.text-cont {
+    width: 67%;
+    height: 52vh;
+    position: relative;
+    top: 20px;
+    background-color: #696969;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.text-cont input {
+    font-size: 20px;
+}
+.title-calculator {
+    text-align: center;
+}
+
+.paragraphes {
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.paragraphes div {
+    margin-top: 5px;
+}
+
+.calc-button {
+    width: 200px;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+/* Menu */
+
+.menu-cont {
+    min-height: 56vh;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.breakfast-cont {
+    width: 1300px;
+    height: 300px;
+    background-color: #d6d6d6;
+    display: flex;
+    flex-direction: column;
+}
+
+.breakfast-cont-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.breakfast-p {
+    padding-left: 30px;
+    padding-top: 10px;
+    padding: 10px 0px 0px 30px;
+}
+
+.breakfast-dishes {
+    width: 1100px;
+    height: 200px;
+    margin-top: 10px;
+    background-color: #696969;
+    /* align-self: center; */
+    overflow: hidden;
+}
+
+.prev-button {
+    width: 75px;
+    height: 75px;
+    background: url(../imgs/arrow.png);
+    background-size: 100%;
+    background-position: center center;
+	background-repeat: no-repeat;
+    align-self: center;
+    transform: rotate(180deg);
+}
+
+.next-button {
+    width: 75px;
+    height: 75px;
+    background: url(../imgs/arrow.png);
+    background-size: 100%;
+    background-position: center center;
+	background-repeat: no-repeat;
+    align-self: center;
+    order: 1;
+}
+
+.breakfast-cont-flex {
+    width: 4400px;
+    display: flex;
+}
+
+.breakfast-cont-flex div {
+    width: 200px;
+    height: 200px;
+}
+
+
+ 
 
 @media (max-width: 1900px) {
     header {

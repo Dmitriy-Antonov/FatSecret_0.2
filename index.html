@@ -13,10 +13,7 @@
             <div class="menu" onclick="show_menu()">
                 <li id="menu-li">
                     <ul><a href="index.html">Главная</a></ul>
-                    <ul><a href="/src/pages/about.html">О нас</a></ul>
-                    <ul><a href="src/pages/menu.html">Меню</a></ul>
                     <ul><a href="src/pages/articles.html">Статьи</a></ul>
-                    <ul><a href="src/pages/CPFC.html">КБЖУ</a></ul>
                 </li>
             </div>
         </nav>
@@ -50,45 +47,117 @@
                 </div>
                 <br><br><br>
         </div>
-        <div class="menu-container">
-            <div class="calorie-content">
-                Для начала необходимо расчитать Вашу суточную норму калорий.
+        <div class="calorie-content">
+            <div class="text-cont">
+                <div class="title-calculator"><h1>Для начала необходимо расчитать Вашу суточную норму калорий.</h1></div>
+                <div class="paragraphes">
+                    <div class="p-1">Ваш пол:<br>
+                        <input type="radio" name="a" id="male-gender" value="male-gender"><label for="male-gender">Мужской</label>
+                        <input type="radio" name="a" id="female-gender" value="female-gender"><label for="female-gender">Женский</label>
+                    </div>
+                    <div class="p-2">Ваш возраст (полных лет):
+                        <input type="number" id="ages">
+                    </div>
+                    <div class="p-3">Ваш вес (в кг):
+                        <input type="number" id="weight">
+                    </div>
+                    <div class="p-4">Ваш рост (в сантиметрах):
+                        <input type="number" id="height">
+                    </div>
+                    <div class="p-5">Ваш коэфициент физ. активности (узнать его можно по <a href="https://mhlife.ru/fitness/motion/pal.html">ссылке</a>):
+                        <input type="number" id="activity-ratio">
+                    </div>
+                    <div class="p-6">Ваша цель:<br>
+                        <input type="radio" name="b" id="weight-gain"><label for="weight-gain">Увеличение веса</label><br>
+                        <input type="radio" name="b" id="slow-weight-gain"><label for="slow-weight-gain">Медленное увеличение веса</label><br>
+                        <input type="radio" name="b" id="maintaining-weight"><label for="maintaining-weight">Сохранение нынешнего веса</label><br>
+                        <input type="radio" name="b" id="slow-weight-loss"><label for="slow-weight-loss">Медленная потеря веса</label><br>
+                        <input type="radio" name="b" id="weight-loss"><label for="weight-loss">Потеря веса</label>
+                    </div>
+                </div>
+                <button onclick="calorie_calculation()" class="calc-button">Рассчитать</button>
             </div>
-            <div class="p-1">Укажите Ваш пол:
-                <input type="radio" name="a" id="male-gender" value="male-gender"><label for="male-gender">Мужской</label>
-                <input type="radio" name="a" id="female-gender" value="female-gender"><label for="female-gender">Женский</label>
-            </div>
-            <div class="p-2">Укажите Ваш возраст (полных лет):
-                <input type="number" id="ages">
-            </div>
-            <div class="p-3">Введите Ваш вес (в кг):
-                <input type="number" id="weight">
-            </div>
-            <div class="p-4">Введите Ваш рост (в сантиметрах):
-                <input type="number" id="height">
-            </div>
-            <div class="p-5">Введите Ваш коэфициент физ. активности (узнать его можно по <a href="https://mhlife.ru/fitness/motion/pal.html">ссылке</a>):
-                <input type="number" id="activity-ratio">
-            </div>
-            <div class="p-6">Какая Ваша цель:
-                <input type="radio" name="b" id="weight-gain"><label for="weight-gain">Увеличение веса</label>
-                <input type="radio" name="b" id="slow-weight-gain"><label for="slow-weight-gain">Медленное увеличение веса</label>
-                <input type="radio" name="b" id="maintaining-weight"><label for="maintaining-weight">Сохранение нынешнего веса</label>
-                <input type="radio" name="b" id="slow-weight-loss"><label for="slow-weight-loss">Медленная потеря веса</label>
-                <input type="radio" name="b" id="weight-loss"><label for="weight-loss">Потеря веса</label>
-            </div>
-            <button onclick="calorie_calculation()">Рассчитать</button>
-            <!-- <div class="menu-title">Блюда</div>
+        </div>
+        <div class="menu-cont">
+            <div class="menu-title">Варианты блюд</div>
             <div class="breakfast-cont">
-                <div class="breakfast-p">Завтрак</div>
+                <div class="breakfast-p"><h1>Завтраки</h1></div>
+                <div class="breakfast-cont-2">
+                    <div class="prev-button"></div>
+                    <div class="next-button"></div>
+                    <div class="breakfast-dishes">
+                        <div class="breakfast-cont-flex">
+                            <div class="b-d-1"></div>
+                            <div class="b-d-2"></div>
+                            <div class="b-d-3"></div>
+                            <div class="b-d-4"></div>
+                            <div class="b-d-5"></div>
+                            <div class="b-d-6"></div>
+                            <div class="b-d-7"></div>
+                            <div class="b-d-8"></div>
+                            <div class="b-d-9"></div>
+                            <div class="b-d-10"></div>
+                            <div class="b-d-11"></div>
+                            <div class="b-d-12"></div>
+                            <div class="b-d-13"></div>
+                            <div class="b-d-14"></div>
+                            <div class="b-d-15"></div>
+                            <div class="b-d-16"></div>
+                            <div class="b-d-17"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="lunch-cont">
                 <div class="lunch-p">Обед</div>
+                <div class="prev-button"></div>
+                <div class="lunch-dishes">
+                    <div class="l-d-1"></div>
+                    <div class="l-d-2"></div>
+                    <div class="l-d-3"></div>
+                    <div class="l-d-4"></div>
+                    <div class="l-d-5"></div>
+                    <div class="l-d-6"></div>
+                    <div class="l-d-7"></div>
+                    <div class="l-d-8"></div>
+                    <div class="l-d-9"></div>
+                    <div class="l-d-10"></div>
+                    <div class="l-d-11"></div>
+                    <div class="l-d-12"></div>
+                    <div class="l-d-13"></div>
+                    <div class="l-d-14"></div>
+                    <div class="l-d-15"></div>
+                    <div class="l-d-16"></div>
+                    <div class="l-d-17"></div>
+                </div>
+                <div class="next-button"></div>
             </div>
             <div class="dinner-cont">
                 <div class="dinner-p">Ужин</div>
-            </div> -->
+                <div class="prev-button"></div>
+                <div class="dinner-dishes">
+                    <div class="d-d-1"></div>
+                    <div class="d-d-2"></div>
+                    <div class="d-d-3"></div>
+                    <div class="d-d-4"></div>
+                    <div class="d-d-5"></div>
+                    <div class="d-d-6"></div>
+                    <div class="d-d-7"></div>
+                    <div class="d-d-8"></div>
+                    <div class="d-d-9"></div>
+                    <div class="d-d-10"></div>
+                    <div class="d-d-11"></div>
+                    <div class="d-d-12"></div>
+                    <div class="d-d-13"></div>
+                    <div class="d-d-14"></div>
+                    <div class="d-d-15"></div>
+                    <div class="d-d-16"></div>
+                    <div class="d-d-17"></div>
+                </div>
+                <div class="next-button"></div>
+            </div>
         </div>
+            
     </main>
     <footer>
 
