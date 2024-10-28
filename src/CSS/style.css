@@ -10,7 +10,7 @@
 
 header {
     min-height: 55vh;
-    background: url(https://www.youthlandacademy.com/wp-content/uploads/2019/03/March-Blog-1-Feature-Image-1024x687.png);
+    background: url(../imgs/modern-kitchen-composition-with-healthy-ingredients.jpg);
     background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -84,16 +84,13 @@ header {
     width: 57%;
     min-height: 45vh;
     /* margin: auto; */
-    margin-top: 62px;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(189, 189, 189);
-    border-radius: 25px;
+    margin-top: 25px;
     position: relative;
 }
 
 .p1 {
     font-size: 35px;
-    color: rgb(0, 172, 0);
+    color: rgb(255, 255, 255);
     /* margin: auto; */
     margin-top: 20px;
     text-align: center;
@@ -102,7 +99,7 @@ header {
 .p2 {
     margin-top: 15px;
     font-size: 25px;    
-    color: rgb(0, 172, 0);
+    color: rgb(255, 255, 255);
     padding: 12px;
 
 }
@@ -113,7 +110,7 @@ header {
     position: absolute;
     bottom: 0;
     text-align: right;
-    color: rgb(0, 134, 0);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -122,7 +119,7 @@ header {
 /* about */
 
 .about-container {
-    background: url(https://avatars.mds.yandex.net/i?id=0004dd5e1b46c1de8108ea732d74322a_l-10299621-images-thumbs&n=13);
+    background: url(../imgs/two-plants-dark-surface.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -163,10 +160,8 @@ header {
     width: 67%;
     height: 28%;
     margin-top: 20px;
-    background-color: #654321;
+    /* background-color: #654321; */
     color: rgb(255, 255, 255);
-    border: 1px solid black;
-    border-radius: 20px;
 }
 
 .about-title {
@@ -205,7 +200,7 @@ header {
 
 .calorie-content {
     min-height: 56vh;
-    background: url(https://www.mgpu.ru/wp-content/uploads/2020/11/calculating-spousal-support-virginia.jpg);
+    background: url(https://krots.top/uploads/posts/2020-01/1579377329_35-96.jpg);
     background-size: cover;
     background-position: center center;
 	background-repeat: no-repeat;
@@ -215,15 +210,13 @@ header {
 }
 
 .text-cont {
-    width: 67%;
-    height: 52vh;
+    width: 1260px;
     position: relative;
     top: 20px;
-    background-color: #696969;
+    /* background-color: #696969; */
     color: rgb(255, 255, 255);
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 20px;
-    padding: 5px;
 }
 
 .text-cont input {
@@ -254,10 +247,15 @@ header {
 /* Menu */
 
 .menu-cont {
+    background: url(https://zefirka.club/uploads/posts/2022-10/1664973573_2-zefirka-club-p-chernii-fon-dlya-yedi-2.jpg);
+    background-size: cover;
+    background-position: center center;
+	background-repeat: no-repeat;
     border-bottom: 2px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 
 .menu-title {
