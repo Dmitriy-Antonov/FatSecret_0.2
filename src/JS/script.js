@@ -72,9 +72,6 @@ function calorie_calculation () {
     alert(result);
 }
 
-let text_hidden = document.getElementById('monday').hidden;
-
-
 function show_content(type, day, intake, arrownum) {
     let arrow = document.getElementById(arrownum);
     let days = document.getElementById(day);
@@ -89,6 +86,7 @@ function show_content(type, day, intake, arrownum) {
 
         if (days.hidden == true) {
             days.hidden = false;
+            days.style.transition = "0.2s";
         } else {
             days.hidden = true;
         }

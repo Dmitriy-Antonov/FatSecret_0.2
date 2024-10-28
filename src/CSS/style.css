@@ -199,7 +199,7 @@ header {
 /* calculator */
 
 .calorie-content {
-    min-height: 56vh;
+    height: 66vh;
     background: url(https://krots.top/uploads/posts/2020-01/1579377329_35-96.jpg);
     background-size: cover;
     background-position: center center;
@@ -232,15 +232,38 @@ header {
     padding-left: 10px;
 }
 
+.paragraphes a {
+    color: white;    
+}
+
 .paragraphes div {
     margin-top: 5px;
+}
+
+input {
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+}
+
+.p-1 label {
+    margin-left: 15px;
+}
+
+.p-6 label {
+    margin-left:15px;
 }
 
 .calc-button {
     width: 200px;
     height: 50px;
+    margin-top: 10px;
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
 }
 
 
@@ -284,13 +307,19 @@ header {
 
 .title-of-dish {
     width: 200px;
+    height: 20px;
     margin-bottom: 20px;
 }
 
 .input-gramm {
-    width: 122px;
+    width: 130px;
     margin-top: 10px;
     text-align: center;
+}
+
+.day-calories-cont {
+    display: flex;
+    margin-right: 0;
 }
 
 /* Завтраки */

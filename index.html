@@ -49,9 +49,9 @@
                 <div class="title-calculator"><h1>Для начала необходимо расчитать Вашу суточную норму калорий.</h1></div>
                 <div class="paragraphes">
                     <div class="p-1">Ваш пол:<br>
-                        <input type="radio" name="a" id="male-gender" value="male-gender"><label for="male-gender">Мужской</label>
+                        <input type="radio" name="a" id="male-gender" value="male-gender"><label for="male-gender">Мужской</label><br>
                         <input type="radio" name="a" id="female-gender" value="female-gender"><label for="female-gender">Женский</label>
-                    </div>
+                    </div><br>
                     <div class="p-2">Ваш возраст (полных лет):
                         <input type="number" id="ages">
                     </div>
@@ -63,7 +63,7 @@
                     </div>
                     <div class="p-5">Ваш коэфициент физ. активности (узнать его можно по <a href="https://mhlife.ru/fitness/motion/pal.html">ссылке</a>):
                         <input type="number" id="activity-ratio">
-                    </div>
+                    </div><br>
                     <div class="p-6">Ваша цель:<br>
                         <input type="radio" name="b" id="weight-gain"><label for="weight-gain">Увеличение веса</label><br>
                         <input type="radio" name="b" id="slow-weight-gain"><label for="slow-weight-gain">Медленное увеличение веса</label><br>
@@ -71,14 +71,14 @@
                         <input type="radio" name="b" id="slow-weight-loss"><label for="slow-weight-loss">Медленная потеря веса</label><br>
                         <input type="radio" name="b" id="weight-loss"><label for="weight-loss">Потеря веса</label>
                     </div>
+                    <button onclick="calorie_calculation()" class="calc-button">Рассчитать</button>
                 </div>
-                <button onclick="calorie_calculation()" class="calc-button">Рассчитать</button>
             </div>
         </div>
         <div class="menu-cont">
             <div class="menu-title"><b>Составление Меню на неделю</b></div>
             <div class="day-of-week">
-                <div class="day-cont">
+                <div class="day-calories-cont">
                     <div class="day-of-week-p"><h1>Понедельник</h1></div>
                     <div class="arrow" id="arrow-1" onclick="show_content('day', 'monday', '', 'arrow-1')"></div>
                 </div>
