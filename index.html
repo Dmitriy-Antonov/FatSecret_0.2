@@ -33,11 +33,8 @@
                     <p>Сайт разработан студентом Нижнекамского Индустриального Техникума в качестве продукта для проектной деятельности.</p>
                     <p>Руководитель проекта: Имамов Руслан Ильдарович.</p>
                     <p>Автор проекта: Антонов Дмитрий Александрович.</p>
-                    <p>Проблема многих людей - несбалансированное питание, в котором присутствует множество вредных привычек.</p>
-                    <p>Из-за проблемы несбалансированного питания страдает иммунитет, кости, мышцы и так далее.</p>
-                    <p>Продолжительность и качество жизни так же зависит от качества питания.</p>
-                    <p>В своей работе я подниму проблему неправильного питания. 
-                        Помогу составить правильное представление о правильном питании, предоставлю инструменты для правильного составления рациона.</p>
+                    <p>В своей работе я подниму проблему неправильного питания. Помогу составить правильное представление о правильном питании, предоставлю инструменты для правильного составления рациона.</p>
+                    <p>Из-за проблемы несбалансированного питания страдает продолжительность и качество жизни, поэтому очень важно следить за своим питанием.</p>
                         <p>Спасибо за внимание!</p>
                 </div>
             </div>
@@ -79,85 +76,2038 @@
             </div>
         </div>
         <div class="menu-cont">
-            <div class="menu-title">Варианты блюд</div>
-            <div class="breakfast-cont">
-                <div class="breakfast-p"><h1>Завтраки</h1></div>
-                <div class="breakfast-cont-2">
-                    <div class="prev-button"></div>
-                    <div class="next-button"></div>
-                    <div class="breakfast-dishes">
-                        <div class="breakfast-cont-flex">
-                            <div class="b-d-1"></div>
-                            <div class="b-d-2"></div>
-                            <div class="b-d-3"></div>
-                            <div class="b-d-4"></div>
-                            <div class="b-d-5"></div>
-                            <div class="b-d-6"></div>
-                            <div class="b-d-7"></div>
-                            <div class="b-d-8"></div>
-                            <div class="b-d-9"></div>
-                            <div class="b-d-10"></div>
-                            <div class="b-d-11"></div>
-                            <div class="b-d-12"></div>
-                            <div class="b-d-13"></div>
-                            <div class="b-d-14"></div>
-                            <div class="b-d-15"></div>
-                            <div class="b-d-16"></div>
-                            <div class="b-d-17"></div>
+            <div class="menu-title"><b>Составление Меню на неделю</b></div>
+            <div class="day-of-week">
+                <div class="day-cont">
+                    <div class="day-of-week-p"><h1>Понедельник</h1></div>
+                    <div class="arrow" id="arrow-1" onclick="show_content('day', 'monday', '', 'arrow-1')"></div>
+                </div>
+                    <div class="monday" id="monday" hidden>
+                        <div class="breakfast-cont">
+                            <div class="breakfast-cont-3">
+                                <div class="breakfast-p" id=""><h2>Завтрак</h2></div>
+                                <div class="arrow-intake" id="arrow-b-m" onclick="show_content('intake', '', 'intake-b-m', 'arrow-b-m')"></div>
+                            </div>
+                            <div class="breakfast-cont-2" id="intake-b-m">
+                                <div class="breakfast-dishes">
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Овсяная каша</div>
+                                        <div class="b-1"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Гречневая каша</div>
+                                        <div class="b-2"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Пшенная каша</div>
+                                        <div class="b-3"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Кукурузная каша</div>
+                                        <div class="b-4"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Омлет</div>
+                                        <div class="b-5"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Яичница</div>
+                                        <div class="b-6"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Яйца всмятку</div>
+                                        <div class="b-7"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Яйца "в мешочек"</div>
+                                        <div class="b-8"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Яйца вкурутую</div>
+                                        <div class="b-9"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Яйцо перепелиное вареное</div>
+                                        <div class="b-10"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Грудка курицы отварная</div>
+                                        <div class="b-11"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Вырезка из говядины на гриле</div>
+                                        <div class="b-12"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Грудка индейки на пару</div>
+                                        <div class="b-13"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Горбуша на пару</div>
+                                        <div class="b-14"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Минтай запечённый</div>
+                                        <div class="b-15"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Творог</div>
+                                        <div class="b-16"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Йогурт нежирный</div>
+                                        <div class="b-17"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Сыр (до 20%)</div>
+                                        <div class="b-18"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Цельнозерновой хлеб</div>
+                                        <div class="b-19"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Мюсли</div>
+                                        <div class="b-20"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lunch-cont">
+                            <div class="lunch-cont-3">
+                                <div class="lunch-p"><h2>Обед</h2></div>
+                                <div class="arrow-intake" id="arrow-l-m" onclick="show_content('intake', '', 'intake-l-m', 'arrow-l-m')"></div>
+                            </div>
+                            <div class="lunch-cont-2" id="intake-l-m">
+                                <div class="lunch-dishes">
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Паста из твёрдых сортов пшеницы</div>
+                                        <div class="l-1"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Бурый рис</div>
+                                        <div class="l-2"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Дикий рис</div>
+                                        <div class="l-3"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Гречка</div>
+                                        <div class="l-4"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Зерновой хлеб</div>
+                                        <div class="l-5"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Говядина на пару</div>
+                                        <div class="l-6"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Курица на пару</div>
+                                        <div class="l-7"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Форель на пару</div>
+                                        <div class="l-8"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Стейк из тунца на гриле</div>
+                                        <div class="l-9"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Краб отварной</div>
+                                        <div class="l-10"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Салат капуста с уксусом и маслом</div>
+                                        <div class="l-11"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Салат с дайконом</div>
+                                        <div class="l-12"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Салат из зеленой редьки с морковью</div>
+                                        <div class="l-13"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Салат с капустой и сыром</div>
+                                        <div class="l-14"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Салат пекинская капуста перец болгарский помидоры</div>
+                                        <div class="l-15"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dinner-cont">
+                            <div class="dinner-cont-3">
+                                <div class="dinner-p"><h2>Ужин</h2></div>
+                                <div class="arrow-intake" id="arrow-d-m" onclick="show_content('intake', '', 'intake-d-m', 'arrow-d-m')"></div>
+                            </div>
+                            <div class="dinner-cont-2" id="intake-d-m">
+                                <div class="dinner-dishes">
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Салат из овощей с греческим йогуртом</div>
+                                        <div class="d-1"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Салат из овощей с маслом и соевым соусом</div>
+                                        <div class="d-2"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Салат из овощей с лимонным соком</div>
+                                        <div class="d-3"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Тилапия отварная</div>
+                                        <div class="d-4"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Запечённая треска</div>
+                                        <div class="d-5"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Морской окунь на пару</div>
+                                        <div class="d-6"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Кальмары на пару</div>
+                                        <div class="d-7"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Креветки на пару</div>
+                                        <div class="d-8"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Мидии отварные</div>
+                                        <div class="d-9"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Краб отварной</div>
+                                        <div class="d-10"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Курица на пару</div>
+                                        <div class="d-11"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Кролик на пару</div>
+                                        <div class="d-12"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Телятина на пару</div>
+                                        <div class="d-13"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Белковый омлет</div>
+                                        <div class="d-14"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                    <div class="dish-cont">
+                                        <div class="title-of-dish">Гречка</div>
+                                        <div class="d-15"></div>
+                                        <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="day-of-week">
+                    <div class="tuesday">
+                        <div class="day-cont">
+                            <div class="day-of-week-p"><h1>Вторник</h1></div>
+                            <div class="arrow" id="arrow-2" onclick="show_content('day', 'tuesday', '', 'arrow-2')"></div>
+                        </div>
+                        <div class="tuesday" id="tuesday" hidden>
+                            <div class="breakfast-cont" id="breakfast-cont" hidden>
+                                <div class="breakfast-cont-3">
+                                    <div class="breakfast-p" id=""><h2>Завтрак</h2></div>
+                                    <div class="arrow-intake" id="arrow-b-t" onclick="show_content('intake', '', 'intake-b-t', 'arrow-b-t')"></div>
+                                </div>
+                                <div class="breakfast-cont-2" id="intake-b-t">
+                                    <div class="breakfast-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Овсяная каша</div>
+                                            <div class="b-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Гречневая каша</div>
+                                            <div class="b-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Пшенная каша</div>
+                                            <div class="b-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Кукурузная каша</div>
+                                            <div class="b-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Омлет</div>
+                                            <div class="b-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яичница</div>
+                                            <div class="b-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйца всмятку</div>
+                                            <div class="b-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйца "в мешочек"</div>
+                                            <div class="b-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйца вкурутую</div>
+                                            <div class="b-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйцо перепелиное вареное</div>
+                                            <div class="b-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Грудка курицы отварная</div>
+                                            <div class="b-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Вырезка из говядины на гриле</div>
+                                            <div class="b-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Грудка индейки на пару</div>
+                                            <div class="b-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Горбуша на пару</div>
+                                            <div class="b-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Минтай запечённый</div>
+                                            <div class="b-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Творог</div>
+                                            <div class="b-16"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Йогурт нежирный</div>
+                                            <div class="b-17"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Сыр (до 20%)</div>
+                                            <div class="b-18"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Цельнозерновой хлеб</div>
+                                            <div class="b-19"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Мюсли</div>
+                                            <div class="b-20"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="lunch-cont">
+                                <div class="lunch-cont-3">
+                                    <div class="lunch-p"><h2>Обед</h2></div>
+                                    <div class="arrow-intake" id="arrow-l-t" onclick="show_content('intake', '', 'intake-l-t', 'arrow-l-t')"></div>
+                                </div>
+                                <div class="lunch-cont-2" id="intake-l-t">
+                                    <div class="lunch-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Паста из твёрдых сортов пшеницы</div>
+                                            <div class="l-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Бурый рис</div>
+                                            <div class="l-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Дикий рис</div>
+                                            <div class="l-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Гречка</div>
+                                            <div class="l-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Зерновой хлеб</div>
+                                            <div class="l-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Говядина на пару</div>
+                                            <div class="l-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Курица на пару</div>
+                                            <div class="l-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Форель на пару</div>
+                                            <div class="l-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Стейк из тунца на гриле</div>
+                                            <div class="l-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Краб отварной</div>
+                                            <div class="l-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат капуста с уксусом и маслом</div>
+                                            <div class="l-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат с дайконом</div>
+                                            <div class="l-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из зеленой редьки с морковью</div>
+                                            <div class="l-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат с капустой и сыром</div>
+                                            <div class="l-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат пекинская капуста перец болгарский помидоры</div>
+                                            <div class="l-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dinner-cont">
+                                <div class="dinner-cont-3">
+                                    <div class="dinner-p"><h2>Ужин</h2></div>
+                                    <div class="arrow-intake" id="arrow-d-t" onclick="show_content('intake', '', 'intake-d-t', 'arrow-d-t')"></div>
+                                </div>
+                                <div class="dinner-cont-2" id="intake-d-t">
+                                    <div class="dinner-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с греческим йогуртом</div>
+                                            <div class="d-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с маслом и соевым соусом</div>
+                                            <div class="d-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с лимонным соком</div>
+                                            <div class="d-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Тилапия отварная</div>
+                                            <div class="d-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Запечённая треска</div>
+                                            <div class="d-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Морской окунь на пару</div>
+                                            <div class="d-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Кальмары на пару</div>
+                                            <div class="d-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Креветки на пару</div>
+                                            <div class="d-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Мидии отварные</div>
+                                            <div class="d-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Краб отварной</div>
+                                            <div class="d-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Курица на пару</div>
+                                            <div class="d-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Кролик на пару</div>
+                                            <div class="d-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Телятина на пару</div>
+                                            <div class="d-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Белковый омлет</div>
+                                            <div class="d-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Гречка</div>
+                                            <div class="d-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="day-of-week">
+                    <div class="wednesday">
+                        <div class="day-cont">
+                            <div class="day-of-week-p"><h1>Среда</h1></div>
+                            <div class="arrow" id="arrow-3" onclick="show_content('day', 'wednesday', '', 'arrow-3')"></div>
+                        </div>
+                        <div class="wednesday" id="wednesday" hidden>
+                            <div class="breakfast-cont" id="breakfast-cont">
+                                <div class="breakfast-cont-3">
+                                    <div class="breakfast-p"><h2>Завтрак</h2></div>
+                                    <div class="arrow-intake" id="arrow-b-w" onclick="show_content('intake', '', 'intake-b-w', 'arrow-b-w')"></div>
+                                </div>
+                                <div class="breakfast-cont-2" id="intake-b-w">
+                                    <div class="breakfast-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Овсяная каша</div>
+                                            <div class="b-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Гречневая каша</div>
+                                            <div class="b-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Пшенная каша</div>
+                                            <div class="b-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Кукурузная каша</div>
+                                            <div class="b-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Омлет</div>
+                                            <div class="b-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яичница</div>
+                                            <div class="b-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйца всмятку</div>
+                                            <div class="b-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйца "в мешочек"</div>
+                                            <div class="b-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйца вкурутую</div>
+                                            <div class="b-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйцо перепелиное вареное</div>
+                                            <div class="b-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Грудка курицы отварная</div>
+                                            <div class="b-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Вырезка из говядины на гриле</div>
+                                            <div class="b-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Грудка индейки на пару</div>
+                                            <div class="b-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Горбуша на пару</div>
+                                            <div class="b-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Минтай запечённый</div>
+                                            <div class="b-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Творог</div>
+                                            <div class="b-16"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Йогурт нежирный</div>
+                                            <div class="b-17"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Сыр (до 20%)</div>
+                                            <div class="b-18"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Цельнозерновой хлеб</div>
+                                            <div class="b-19"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Мюсли</div>
+                                            <div class="b-20"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lunch-cont">
+                                <div class="lunch-cont-3">
+                                    <div class="lunch-p"><h2>Обед</h2></div>
+                                    <div class="arrow-intake" id="arrow-l-w" onclick="show_content('intake', '', 'intake-l-w', 'arrow-l-w')"></div>
+                                </div>
+                                <div class="lunch-cont-2" id="intake-l-w">
+                                    <div class="lunch-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Паста из твёрдых сортов пшеницы</div>
+                                            <div class="l-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Бурый рис</div>
+                                            <div class="l-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Дикий рис</div>
+                                            <div class="l-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Гречка</div>
+                                            <div class="l-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Зерновой хлеб</div>
+                                            <div class="l-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Говядина на пару</div>
+                                            <div class="l-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Курица на пару</div>
+                                            <div class="l-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Форель на пару</div>
+                                            <div class="l-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Стейк из тунца на гриле</div>
+                                            <div class="l-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Краб отварной</div>
+                                            <div class="l-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат капуста с уксусом и маслом</div>
+                                            <div class="l-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат с дайконом</div>
+                                            <div class="l-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из зеленой редьки с морковью</div>
+                                            <div class="l-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат с капустой и сыром</div>
+                                            <div class="l-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат пекинская капуста перец болгарский помидоры</div>
+                                            <div class="l-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dinner-cont">
+                                <div class="dinner-cont-3">
+                                    <div class="dinner-p"><h2>Ужин</h2></div>
+                                    <div class="arrow-intake" id="arrow-d-w" onclick="show_content('intake', '', 'intake-d-w', 'arrow-d-w')"></div>
+                                </div>
+                                <div class="dinner-cont-2" id="intake-d-w">
+                                    <div class="dinner-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с греческим йогуртом</div>
+                                            <div class="d-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с маслом и соевым соусом</div>
+                                            <div class="d-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с лимонным соком</div>
+                                            <div class="d-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Тилапия отварная</div>
+                                            <div class="d-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Запечённая треска</div>
+                                            <div class="d-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Морской окунь на пару</div>
+                                            <div class="d-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Кальмары на пару</div>
+                                            <div class="d-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Креветки на пару</div>
+                                            <div class="d-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Мидии отварные</div>
+                                            <div class="d-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Краб отварной</div>
+                                            <div class="d-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Курица на пару</div>
+                                            <div class="d-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Кролик на пару</div>
+                                            <div class="d-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Телятина на пару</div>
+                                            <div class="d-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Белковый омлет</div>
+                                            <div class="d-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Гречка</div>
+                                            <div class="d-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="day-of-week">
+                    <div class="thursday">
+                        <div class="day-cont">
+                            <div class="day-of-week-p"><h1>Четверг</h1></div>
+                            <div class="arrow" id="arrow-4" onclick="show_content('day', 'thursday', '', 'arrow-4')"></div>
+                        </div>
+                        <div class="thursday" id="thursday" hidden>
+                            <div class="breakfast-cont" id="breakfast-cont">
+                                <div class="breakfast-cont-3">
+                                    <div class="breakfast-p"><h2>Завтрак</h2></div>
+                                    <div class="arrow-intake" id="arrow-b-th" onclick="show_content('intake', 'monday', 'intake-b-th', 'arrow-b-th')"></div>
+                                </div>
+                                <div class="breakfast-cont-2" id="intake-b-th">
+                                    <div class="breakfast-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Овсяная каша</div>
+                                            <div class="b-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Гречневая каша</div>
+                                            <div class="b-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Пшенная каша</div>
+                                            <div class="b-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Кукурузная каша</div>
+                                            <div class="b-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Омлет</div>
+                                            <div class="b-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яичница</div>
+                                            <div class="b-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйца всмятку</div>
+                                            <div class="b-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйца "в мешочек"</div>
+                                            <div class="b-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйца вкурутую</div>
+                                            <div class="b-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйцо перепелиное вареное</div>
+                                            <div class="b-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Грудка курицы отварная</div>
+                                            <div class="b-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Вырезка из говядины на гриле</div>
+                                            <div class="b-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Грудка индейки на пару</div>
+                                            <div class="b-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Горбуша на пару</div>
+                                            <div class="b-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Минтай запечённый</div>
+                                            <div class="b-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Творог</div>
+                                            <div class="b-16"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Йогурт нежирный</div>
+                                            <div class="b-17"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Сыр (до 20%)</div>
+                                            <div class="b-18"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Цельнозерновой хлеб</div>
+                                            <div class="b-19"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Мюсли</div>
+                                            <div class="b-20"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lunch-cont">
+                                <div class="lunch-cont-3">
+                                    <div class="lunch-p"><h2>Обед</h2></div>
+                                    <div class="arrow-intake" id="arrow-l-th" onclick="show_content('intake', '', 'intake-l-th', 'arrow-l-th')"></div>
+                                </div>
+                                <div class="lunch-cont-2" id="intake-l-th">
+                                    <div class="lunch-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Паста из твёрдых сортов пшеницы</div>
+                                            <div class="l-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Бурый рис</div>
+                                            <div class="l-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Дикий рис</div>
+                                            <div class="l-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Гречка</div>
+                                            <div class="l-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Зерновой хлеб</div>
+                                            <div class="l-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Говядина на пару</div>
+                                            <div class="l-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Курица на пару</div>
+                                            <div class="l-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Форель на пару</div>
+                                            <div class="l-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Стейк из тунца на гриле</div>
+                                            <div class="l-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Краб отварной</div>
+                                            <div class="l-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат капуста с уксусом и маслом</div>
+                                            <div class="l-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат с дайконом</div>
+                                            <div class="l-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из зеленой редьки с морковью</div>
+                                            <div class="l-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат с капустой и сыром</div>
+                                            <div class="l-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат пекинская капуста перец болгарский помидоры</div>
+                                            <div class="l-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dinner-cont">
+                                <div class="dinner-cont-3">
+                                    <div class="dinner-p"><h2>Ужин</h2></div>
+                                    <div class="arrow-intake" id="arrow-d-th" onclick="show_content('intake', '', 'intake-d-th', 'arrow-d-th')"></div>
+                                </div>
+                                <div class="dinner-cont-2" id="intake-d-th">
+                                    <div class="dinner-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с греческим йогуртом</div>
+                                            <div class="d-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с маслом и соевым соусом</div>
+                                            <div class="d-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с лимонным соком</div>
+                                            <div class="d-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Тилапия отварная</div>
+                                            <div class="d-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Запечённая треска</div>
+                                            <div class="d-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Морской окунь на пару</div>
+                                            <div class="d-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Кальмары на пару</div>
+                                            <div class="d-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Креветки на пару</div>
+                                            <div class="d-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Мидии отварные</div>
+                                            <div class="d-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Краб отварной</div>
+                                            <div class="d-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Курица на пару</div>
+                                            <div class="d-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Кролик на пару</div>
+                                            <div class="d-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Телятина на пару</div>
+                                            <div class="d-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Белковый омлет</div>
+                                            <div class="d-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Гречка</div>
+                                            <div class="d-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="day-of-week">
+                    <div class="friday">
+                        <div class="day-cont">
+                            <div class="day-of-week-p"><h1>Пятница</h1></div>
+                            <div class="arrow" id="arrow-5" onclick="show_content('day', 'friday', '', 'arrow-5')"></div>
+                        </div>
+                        <div class="friday" id="friday" hidden>
+                            <div class="breakfast-cont" id="breakfast-cont">
+                                <div class="breakfast-cont-3">
+                                    <div class="breakfast-p"><h2>Завтрак</h2></div>
+                                    <div class="arrow-intake" id="arrow-b-f" onclick="show_content('intake', '', 'intake-b-f', 'arrow-b-f')"></div>
+                                </div>
+                                <div class="breakfast-cont-2" id="intake-b-f">
+                                    <div class="breakfast-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Овсяная каша</div>
+                                            <div class="b-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Гречневая каша</div>
+                                            <div class="b-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Пшенная каша</div>
+                                            <div class="b-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Кукурузная каша</div>
+                                            <div class="b-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Омлет</div>
+                                            <div class="b-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яичница</div>
+                                            <div class="b-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйца всмятку</div>
+                                            <div class="b-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйца "в мешочек"</div>
+                                            <div class="b-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйца вкурутую</div>
+                                            <div class="b-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйцо перепелиное вареное</div>
+                                            <div class="b-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Грудка курицы отварная</div>
+                                            <div class="b-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Вырезка из говядины на гриле</div>
+                                            <div class="b-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Грудка индейки на пару</div>
+                                            <div class="b-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Горбуша на пару</div>
+                                            <div class="b-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Минтай запечённый</div>
+                                            <div class="b-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Творог</div>
+                                            <div class="b-16"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Йогурт нежирный</div>
+                                            <div class="b-17"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Сыр (до 20%)</div>
+                                            <div class="b-18"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Цельнозерновой хлеб</div>
+                                            <div class="b-19"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Мюсли</div>
+                                            <div class="b-20"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lunch-cont">
+                                <div class="lunch-cont-3">
+                                    <div class="lunch-p"><h2>Обед</h2></div>
+                                    <div class="arrow-intake" id="arrow-l-f" onclick="show_content('intake', '', 'intake-l-f', 'arrow-l-f')"></div>
+                                </div>
+                                <div class="lunch-cont-2" id="intake-l-f">
+                                    <div class="lunch-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Паста из твёрдых сортов пшеницы</div>
+                                            <div class="l-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Бурый рис</div>
+                                            <div class="l-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Дикий рис</div>
+                                            <div class="l-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Гречка</div>
+                                            <div class="l-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Зерновой хлеб</div>
+                                            <div class="l-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Говядина на пару</div>
+                                            <div class="l-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Курица на пару</div>
+                                            <div class="l-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Форель на пару</div>
+                                            <div class="l-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Стейк из тунца на гриле</div>
+                                            <div class="l-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Краб отварной</div>
+                                            <div class="l-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат капуста с уксусом и маслом</div>
+                                            <div class="l-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат с дайконом</div>
+                                            <div class="l-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из зеленой редьки с морковью</div>
+                                            <div class="l-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат с капустой и сыром</div>
+                                            <div class="l-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат пекинская капуста перец болгарский помидоры</div>
+                                            <div class="l-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dinner-cont">
+                                <div class="dinner-cont-3">
+                                    <div class="dinner-p"><h2>Ужин</h2></div>
+                                    <div class="arrow-intake" id="arrow-d-f" onclick="show_content('intake', '', 'intake-d-f', 'arrow-d-f')"></div>
+                                </div>
+                                <div class="dinner-cont-2" id="intake-d-f">
+                                    <div class="dinner-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с греческим йогуртом</div>
+                                            <div class="d-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с маслом и соевым соусом</div>
+                                            <div class="d-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с лимонным соком</div>
+                                            <div class="d-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Тилапия отварная</div>
+                                            <div class="d-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Запечённая треска</div>
+                                            <div class="d-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Морской окунь на пару</div>
+                                            <div class="d-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Кальмары на пару</div>
+                                            <div class="d-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Креветки на пару</div>
+                                            <div class="d-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Мидии отварные</div>
+                                            <div class="d-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Краб отварной</div>
+                                            <div class="d-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Курица на пару</div>
+                                            <div class="d-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Кролик на пару</div>
+                                            <div class="d-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Телятина на пару</div>
+                                            <div class="d-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Белковый омлет</div>
+                                            <div class="d-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Гречка</div>
+                                            <div class="d-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="day-of-week">
+                    <div class="saturday">
+                        <div class="day-cont">
+                            <div class="day-of-week-p"><h1>Суббота</h1></div>
+                            <div class="arrow" id="arrow-6" onclick="show_content('day', 'saturday', '', 'arrow-6')"></div>
+                        </div>
+                        <div class="saturday" id="saturday" hidden>    
+                            <div class="breakfast-cont" id="breakfast-cont">
+                                <div class="breakfast-cont-3">
+                                    <div class="breakfast-p"><h2>Завтрак</h2></div>
+                                    <div class="arrow-intake" id="arrow-b-s" onclick="show_content('intake', '', 'intake-b-s', 'arrow-b-s')"></div>
+                                </div>
+                                <div class="breakfast-cont-2" id="intake-b-s">
+                                    <div class="breakfast-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Овсяная каша</div>
+                                            <div class="b-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Гречневая каша</div>
+                                            <div class="b-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Пшенная каша</div>
+                                            <div class="b-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Кукурузная каша</div>
+                                            <div class="b-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Омлет</div>
+                                            <div class="b-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яичница</div>
+                                            <div class="b-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйца всмятку</div>
+                                            <div class="b-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйца "в мешочек"</div>
+                                            <div class="b-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Яйца вкурутую</div>
+                                            <div class="b-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish" id="title-of-dish">Яйцо перепелиное вареное</div>
+                                            <div class="b-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish" id="title-of-dish"class="title-of-dish" id="title-of-dish">Грудка курицы отварная</div>
+                                            <div class="b-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish" id="title-of-dish"class="title-of-dish" id="title-of-dish">Вырезка из говядины на гриле</div>
+                                            <div class="b-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish" id="title-of-dish"class="title-of-dish" id="title-of-dish">Грудка индейки на пару</div>
+                                            <div class="b-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish" id="title-of-dish"class="title-of-dish" id="title-of-dish">Горбуша на пару</div>
+                                            <div class="b-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish" id="title-of-dish"class="title-of-dish" id="title-of-dish">Минтай запечённый</div>
+                                            <div class="b-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish" id="title-of-dish"class="title-of-dish" id="title-of-dish">Творог</div>
+                                            <div class="b-16"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish" id="title-of-dish"class="title-of-dish" id="title-of-dish">Йогурт нежирный</div>
+                                            <div class="b-17"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish" id="title-of-dish"class="title-of-dish" id="title-of-dish">Сыр (до 20%)</div>
+                                            <div class="b-18"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish" id="title-of-dish"class="title-of-dish" id="title-of-dish">Цельнозерновой хлеб</div>
+                                            <div class="b-19"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish" id="title-of-dish"class="title-of-dish" id="title-of-dish">Мюсли</div>
+                                            <div class="b-20"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lunch-cont">
+                                <div class="lunch-cont-3">
+                                    <div class="lunch-p"><h2>Обед</h2></div>
+                                    <div class="arrow-intake" id="arrow-l-s" onclick="show_content('intake', '', 'intake-l-s', 'arrow-l-s')"></div>
+                                </div>
+                                <div class="lunch-cont-2" id="intake-l-s">
+                                    <div class="lunch-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Паста из твёрдых сортов пшеницы</div>
+                                            <div class="l-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Бурый рис</div>
+                                            <div class="l-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Дикий рис</div>
+                                            <div class="l-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Гречка</div>
+                                            <div class="l-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Зерновой хлеб</div>
+                                            <div class="l-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Говядина на пару</div>
+                                            <div class="l-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Курица на пару</div>
+                                            <div class="l-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Форель на пару</div>
+                                            <div class="l-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Стейк из тунца на гриле</div>
+                                            <div class="l-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Краб отварной</div>
+                                            <div class="l-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат капуста с уксусом и маслом</div>
+                                            <div class="l-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат с дайконом</div>
+                                            <div class="l-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из зеленой редьки с морковью</div>
+                                            <div class="l-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат с капустой и сыром</div>
+                                            <div class="l-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат пекинская капуста перец болгарский помидоры</div>
+                                            <div class="l-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dinner-cont">
+                                <div class="dinner-cont-3">
+                                    <div class="dinner-p"><h2>Ужин</h2></div>
+                                    <div class="arrow-intake" id="arrow-d-s" onclick="show_content('intake', '', 'intake-d-s', 'arrow-d-s')"></div>
+                                </div>
+                                <div class="dinner-cont-2" id="intake-d-s">
+                                    <div class="dinner-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с греческим йогуртом</div>
+                                            <div class="d-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с маслом и соевым соусом</div>
+                                            <div class="d-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с лимонным соком</div>
+                                            <div class="d-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Тилапия отварная</div>
+                                            <div class="d-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Запечённая треска</div>
+                                            <div class="d-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Морской окунь на пару</div>
+                                            <div class="d-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Кальмары на пару</div>
+                                            <div class="d-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Креветки на пару</div>
+                                            <div class="d-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Мидии отварные</div>
+                                            <div class="d-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Краб отварной</div>
+                                            <div class="d-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Курица на пару</div>
+                                            <div class="d-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Кролик на пару</div>
+                                            <div class="d-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Телятина на пару</div>
+                                            <div class="d-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Белковый омлет</div>
+                                            <div class="d-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Гречка</div>
+                                            <div class="d-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="day-of-week">
+                    <div class="sunday">
+                        <div class="day-cont">
+                            <div class="day-of-week-p"><h1>Воскресенье</h1></div>
+                            <div class="arrow" id="arrow-7" onclick="show_content('day', 'sunday', '', 'arrow-7')"></div>
+                        </div>
+                        <div class="sunday" id="sunday" hidden>
+                            <div class="breakfast-cont">
+                                <div class="breakfast-cont-3">
+                                    <div class="breakfast-p"><h2>Завтрак</h2></div>
+                                    <div class="arrow-intake" id="arrow-b-su" onclick="show_content('intake', '', 'intake-b-su', 'arrow-b-su')"></div>
+                                </div>
+                                <div class="breakfast-cont-2" id="intake-b-su">
+                                    <div class="breakfast-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish" id="title-of-dish">Овсяная каша</div>
+                                            <div class="b-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Гречневая каша</div>
+                                            <div class="b-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Пшенная каша</div>
+                                            <div class="b-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Кукурузная каша</div>
+                                            <div class="b-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Омлет</div>
+                                            <div class="b-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Яичница</div>
+                                            <div class="b-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Яйца всмятку</div>
+                                            <div class="b-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Яйца "в мешочек"</div>
+                                            <div class="b-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Яйца вкурутую</div>
+                                            <div class="b-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Яйцо перепелиное вареное</div>
+                                            <div class="b-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Грудка курицы отварная</div>
+                                            <div class="b-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Вырезка из говядины на гриле</div>
+                                            <div class="b-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Грудка индейки на пару</div>
+                                            <div class="b-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Горбуша на пару</div>
+                                            <div class="b-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Минтай запечённый</div>
+                                            <div class="b-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Творог</div>
+                                            <div class="b-16"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Йогурт нежирный</div>
+                                            <div class="b-17"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Сыр (до 20%)</div>
+                                            <div class="b-18"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Цельнозерновой хлеб</div>
+                                            <div class="b-19"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish"  id="title-of-dish">Мюсли</div>
+                                            <div class="b-20"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lunch-cont">
+                                <div class="lunch-cont-3">
+                                    <div class="lunch-p"><h2>Обед</h2></div>
+                                    <div class="arrow-intake" id="arrow-l-su" onclick="show_content('intake', '', 'intake-l-su', 'arrow-l-su')"></div>
+                                </div>
+                                <div class="lunch-cont-2" id="intake-l-su">
+                                    <div class="lunch-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Паста из твёрдых сортов пшеницы</div>
+                                            <div class="l-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Бурый рис</div>
+                                            <div class="l-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Дикий рис</div>
+                                            <div class="l-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Гречка</div>
+                                            <div class="l-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Зерновой хлеб</div>
+                                            <div class="l-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Говядина на пару</div>
+                                            <div class="l-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Курица на пару</div>
+                                            <div class="l-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Форель на пару</div>
+                                            <div class="l-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Стейк из тунца на гриле</div>
+                                            <div class="l-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Краб отварной</div>
+                                            <div class="l-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат капуста с уксусом и маслом</div>
+                                            <div class="l-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат с дайконом</div>
+                                            <div class="l-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из зеленой редьки с морковью</div>
+                                            <div class="l-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат с капустой и сыром</div>
+                                            <div class="l-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат пекинская капуста перец болгарский помидоры</div>
+                                            <div class="l-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dinner-cont">
+                                <div class="dinner-cont-3">
+                                    <div class="dinner-p"><h2>Ужин</h2></div>
+                                    <div class="arrow-intake" id="arrow-d-su" onclick="show_content('intake', '', 'intake-d-su', 'arrow-d-su')"></div>
+                                </div>
+                                <div class="dinner-cont-2" id="intake-d-su">
+                                    <div class="dinner-dishes">
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с греческим йогуртом</div>
+                                            <div class="d-1"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с маслом и соевым соусом</div>
+                                            <div class="d-2"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Салат из овощей с лимонным соком</div>
+                                            <div class="d-3"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Тилапия отварная</div>
+                                            <div class="d-4"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Запечённая треска</div>
+                                            <div class="d-5"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Морской окунь на пару</div>
+                                            <div class="d-6"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Кальмары на пару</div>
+                                            <div class="d-7"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Креветки на пару</div>
+                                            <div class="d-8"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Мидии отварные</div>
+                                            <div class="d-9"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Краб отварной</div>
+                                            <div class="d-10"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Курица на пару</div>
+                                            <div class="d-11"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Кролик на пару</div>
+                                            <div class="d-12"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Телятина на пару</div>
+                                            <div class="d-13"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Белковый омлет</div>
+                                            <div class="d-14"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                        <div class="dish-cont">
+                                            <div class="title-of-dish">Гречка</div>
+                                            <div class="d-15"></div>
+                                            <input type="number" placeholder="Введите граммы" class="input-gramm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="lunch-cont">
-                <div class="lunch-p">Обед</div>
-                <div class="prev-button"></div>
-                <div class="lunch-dishes">
-                    <div class="l-d-1"></div>
-                    <div class="l-d-2"></div>
-                    <div class="l-d-3"></div>
-                    <div class="l-d-4"></div>
-                    <div class="l-d-5"></div>
-                    <div class="l-d-6"></div>
-                    <div class="l-d-7"></div>
-                    <div class="l-d-8"></div>
-                    <div class="l-d-9"></div>
-                    <div class="l-d-10"></div>
-                    <div class="l-d-11"></div>
-                    <div class="l-d-12"></div>
-                    <div class="l-d-13"></div>
-                    <div class="l-d-14"></div>
-                    <div class="l-d-15"></div>
-                    <div class="l-d-16"></div>
-                    <div class="l-d-17"></div>
-                </div>
-                <div class="next-button"></div>
-            </div>
-            <div class="dinner-cont">
-                <div class="dinner-p">Ужин</div>
-                <div class="prev-button"></div>
-                <div class="dinner-dishes">
-                    <div class="d-d-1"></div>
-                    <div class="d-d-2"></div>
-                    <div class="d-d-3"></div>
-                    <div class="d-d-4"></div>
-                    <div class="d-d-5"></div>
-                    <div class="d-d-6"></div>
-                    <div class="d-d-7"></div>
-                    <div class="d-d-8"></div>
-                    <div class="d-d-9"></div>
-                    <div class="d-d-10"></div>
-                    <div class="d-d-11"></div>
-                    <div class="d-d-12"></div>
-                    <div class="d-d-13"></div>
-                    <div class="d-d-14"></div>
-                    <div class="d-d-15"></div>
-                    <div class="d-d-16"></div>
-                    <div class="d-d-17"></div>
-                </div>
-                <div class="next-button"></div>
-            </div>
         </div>
-            
     </main>
     <footer>
 

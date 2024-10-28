@@ -38,35 +38,80 @@ function show_menu() {
     }
 }
 
+let result = 0;
+
 function calorie_calculation () {
     
     let age = +document.getElementById('ages').value;
     let weight = +document.getElementById('weight').value;
     let height = +document.getElementById('height').value;
     let activity_ratio = +document.getElementById('activity-ratio').value;
-    let result1 = 0;
     
     if (document.getElementById('male-gender').checked == true) {
-        result1 = (10 * weight + 6.25 * height - 5 * age - 161) * activity_ratio;
+        result = (10 * weight + 6.25 * height - 5 * age - 161) * activity_ratio;
     } else if (document.getElementById('female-gender').checked == true){
-        result1 = (10 * weight + 6.25 * height - 5 * age + 5) * activity_ratio;
+        result = (10 * weight + 6.25 * height - 5 * age + 5) * activity_ratio;
     } else {
         alert("Выберите пол!")
     }
 
     if (document.getElementById('weight-gain').checked == true) {
-        result1 += result1 * 0.2;
+        result += result * 0.2;
     } else if (document.getElementById('slow-weight-gain').checked == true) {
-        result1 += result1 * 0.1;
+        result += result * 0.1;
     } else if (document.getElementById('maintaining-weight').checked == true) {
-        result1 = result1;
+        result = result;
     } else if (document.getElementById('slow-weight-loss').checked == true) {
-        result1 -= result1 * 0.1; 
+        result -= result * 0.1; 
     } else if (document.getElementById('weight-loss').checked == true) {
-        result1 -= result1 * 0.2;
+        result -= result * 0.2;
     } else {
         alert ("Вы не указали Вашу цель!");
     }
 
-    alert(result1);
+    alert(result);
+}
+
+let text_hidden = document.getElementById('monday').hidden;
+
+
+function show_content(type, day, intake, arrownum) {
+    let arrow = document.getElementById(arrownum);
+    let days = document.getElementById(day);
+    let intakes = document.getElementById(intake);
+
+    if (type == 'day') {
+        if (arrow.style.transform != "rotate(180deg)") {
+            arrow.style.transform = "rotate(180deg)";
+        } else {
+            arrow.style.transform = "rotate(0deg)";
+        }
+
+        if (days.hidden == true) {
+            days.hidden = false;
+        } else {
+            days.hidden = true;
+        }
+    } else {
+        if (arrow.style.transform != "rotate(180deg)") {
+            arrow.style.transform = "rotate(180deg)";
+        } else {
+            arrow.style.transform = "rotate(0deg)";
+        }
+
+        if (intakes.style.display != 'flex') {
+            intakes.style.display = 'flex';
+            intakes.style.marginBottom = '30px';
+        } else {
+            intakes.style.display = 'none';
+        }
+    }
+}
+
+let kaloriesOfIntake = 0;
+
+function total_kalories(id, nutritional) {
+    let grams = document.getElementById(id).value;
+
+    return kaloriesOfIntake = grams * nutritional;
 }
