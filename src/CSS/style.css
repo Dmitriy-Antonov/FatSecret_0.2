@@ -322,6 +322,21 @@ input {
     margin-right: 0;
 }
 
+.arrow-intake {
+    width: 25px;
+    height: 25px;
+    margin-top: 3px;
+    background: url(../imgs/arrow.png);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: 0.2s;
+}
+
+.sum-of-calories {
+    margin-left: auto;
+}
+
 /* Завтраки */
 
 .breakfast-cont {
@@ -338,19 +353,11 @@ input {
 }
 
 .breakfast-cont-3 {
+    width: 1260px;
     display: flex;
 }
 
-.arrow-intake {
-    width: 25px;
-    height: 25px;
-    margin-top: 3px;
-    background: url(../imgs/arrow.png);
-    background-size: 100%;
-    background-position: center center;
-	background-repeat: no-repeat;
-    transition: 0.2s;
-}
+
 
 .breakfast-dishes {
     width: 1200px;
@@ -362,6 +369,72 @@ input {
     text-align: center;
 }
 
+/* Обеды */
+
+.lunch-cont {
+    width: 1260px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lunch-cont-2 {
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.lunch-cont-3 {
+    display: flex;
+}
+
+.lunch-dishes {
+    width: 1200px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 1px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* .lunch-dishes div {
+    margin-bottom: 10px;
+    text-align: center;
+} */
+
+/* Ужины */
+
+.dinner-cont {
+    width: 1260px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dinner-cont-2 {
+    display: flex;
+    justify-content: space-between;
+    display: none;
+    margin-top: 10px;
+}
+
+.dinner-cont-3 {
+    display: flex;
+}
+
+.dinner-dishes {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 1px;
+    justify-content: space-between;
+}
+
+.dinner-dishes div {
+    margin-bottom: 10px;
+    text-align: center;
+}
 
 /* Блюда */
 
@@ -814,73 +887,6 @@ input {
     background-position: center center;
 	background-repeat: no-repeat;
 }
-
-/* Обеды */
-
-.lunch-cont {
-    width: 1260px;
-    display: flex;
-    flex-direction: column;
-}
-
-.lunch-cont-2 {
-    display: flex;
-    justify-content: space-between;
-    display: none;
-    margin-top: 10px;
-}
-
-.lunch-cont-3 {
-    display: flex;
-}
-
-.lunch-dishes {
-    width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px 1px;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.lunch-dishes div {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/* Ужины */
-
-.dinner-cont {
-    width: 1260px;
-    display: flex;
-    flex-direction: column;
-}
-
-.dinner-cont-2 {
-    display: flex;
-    justify-content: space-between;
-    display: none;
-    margin-top: 10px;
-}
-
-.dinner-cont-3 {
-    display: flex;
-}
-
-.dinner-dishes {
-    width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px 1px;
-    justify-content: space-between;
-}
-
-.dinner-dishes div {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-
 
 @media (max-width: 1900px) {
     header {

@@ -40,6 +40,12 @@ function show_menu() {
 
 let result = 0;
 
+let proteins = 0;
+let fats = 0;
+let carbohydrates = 0;
+
+
+
 function calorie_calculation () {
     
     let age = +document.getElementById('ages').value;
@@ -70,6 +76,13 @@ function calorie_calculation () {
     }
 
     alert(result);
+
+    let breakfastCalories = parseInt(result * 0.325);
+    let lunchCalories = parseInt(result * 0.40);
+    let dinnerCalories = parseInt(result * 0.275);
+    sumOfCalories.textContent = `Калориев: 1200/${breakfastCalories}`;
+
+
 }
 
 function show_content(type, day, intake, arrownum) {
@@ -113,3 +126,5 @@ function total_kalories(id, nutritional) {
 
     return kaloriesOfIntake = grams * nutritional;
 }
+
+let sumOfCalories = document.getElementById('sumOfCalories');

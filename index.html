@@ -85,8 +85,9 @@
                     <div class="monday" id="monday" hidden>
                         <div class="breakfast-cont">
                             <div class="breakfast-cont-3">
-                                <div class="breakfast-p" id=""><h2>Завтрак</h2></div>
+                                <div class="breakfast-p" id="" onclick="show_content('intake', '', 'intake-b-m', 'arrow-b-m')"><h2>Завтрак</h2></div>
                                 <div class="arrow-intake" id="arrow-b-m" onclick="show_content('intake', '', 'intake-b-m', 'arrow-b-m')"></div>
+                                <div class="sum-of-calories" id="sumOfCalories"></div>
                             </div>
                             <div class="breakfast-cont-2" id="intake-b-m">
                                 <div class="breakfast-dishes">
@@ -197,6 +198,7 @@
                             <div class="lunch-cont-3">
                                 <div class="lunch-p"><h2>Обед</h2></div>
                                 <div class="arrow-intake" id="arrow-l-m" onclick="show_content('intake', '', 'intake-l-m', 'arrow-l-m')"></div>
+                                <div class="sum-of-calories" id="sumOfCalories"></div>
                             </div>
                             <div class="lunch-cont-2" id="intake-l-m">
                                 <div class="lunch-dishes">
@@ -282,6 +284,7 @@
                             <div class="dinner-cont-3">
                                 <div class="dinner-p"><h2>Ужин</h2></div>
                                 <div class="arrow-intake" id="arrow-d-m" onclick="show_content('intake', '', 'intake-d-m', 'arrow-d-m')"></div>
+                                <div class="sum-of-calories" id="sumOfCalories"></div>
                             </div>
                             <div class="dinner-cont-2" id="intake-d-m">
                                 <div class="dinner-dishes">
@@ -374,8 +377,9 @@
                         <div class="tuesday" id="tuesday" hidden>
                             <div class="breakfast-cont" id="breakfast-cont" hidden>
                                 <div class="breakfast-cont-3">
-                                    <div class="breakfast-p" id=""><h2>Завтрак</h2></div>
+                                    <div class="breakfast-p" onclick="show_content('intake', '', 'intake-b-t', 'arrow-b-t')"><h2>Завтрак</h2></div>
                                     <div class="arrow-intake" id="arrow-b-t" onclick="show_content('intake', '', 'intake-b-t', 'arrow-b-t')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
                                 </div>
                                 <div class="breakfast-cont-2" id="intake-b-t">
                                     <div class="breakfast-dishes">
@@ -487,6 +491,7 @@
                                 <div class="lunch-cont-3">
                                     <div class="lunch-p"><h2>Обед</h2></div>
                                     <div class="arrow-intake" id="arrow-l-t" onclick="show_content('intake', '', 'intake-l-t', 'arrow-l-t')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
                                 </div>
                                 <div class="lunch-cont-2" id="intake-l-t">
                                     <div class="lunch-dishes">
@@ -572,6 +577,7 @@
                                 <div class="dinner-cont-3">
                                     <div class="dinner-p"><h2>Ужин</h2></div>
                                     <div class="arrow-intake" id="arrow-d-t" onclick="show_content('intake', '', 'intake-d-t', 'arrow-d-t')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
                                 </div>
                                 <div class="dinner-cont-2" id="intake-d-t">
                                     <div class="dinner-dishes">
@@ -665,8 +671,9 @@
                         <div class="wednesday" id="wednesday" hidden>
                             <div class="breakfast-cont" id="breakfast-cont">
                                 <div class="breakfast-cont-3">
-                                    <div class="breakfast-p"><h2>Завтрак</h2></div>
+                                    <div class="breakfast-p" id="" onclick="show_content('intake', '', 'intake-b-w', 'arrow-b-w')"><h2>Завтрак</h2></div>
                                     <div class="arrow-intake" id="arrow-b-w" onclick="show_content('intake', '', 'intake-b-w', 'arrow-b-w')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
                                 </div>
                                 <div class="breakfast-cont-2" id="intake-b-w">
                                     <div class="breakfast-dishes">
@@ -777,6 +784,7 @@
                                 <div class="lunch-cont-3">
                                     <div class="lunch-p"><h2>Обед</h2></div>
                                     <div class="arrow-intake" id="arrow-l-w" onclick="show_content('intake', '', 'intake-l-w', 'arrow-l-w')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
                                 </div>
                                 <div class="lunch-cont-2" id="intake-l-w">
                                     <div class="lunch-dishes">
@@ -862,6 +870,7 @@
                                 <div class="dinner-cont-3">
                                     <div class="dinner-p"><h2>Ужин</h2></div>
                                     <div class="arrow-intake" id="arrow-d-w" onclick="show_content('intake', '', 'intake-d-w', 'arrow-d-w')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
                                 </div>
                                 <div class="dinner-cont-2" id="intake-d-w">
                                     <div class="dinner-dishes">
@@ -955,8 +964,9 @@
                         <div class="thursday" id="thursday" hidden>
                             <div class="breakfast-cont" id="breakfast-cont">
                                 <div class="breakfast-cont-3">
-                                    <div class="breakfast-p"><h2>Завтрак</h2></div>
+                                    <div class="breakfast-p" onclick="show_content('intake', 'monday', 'intake-b-th', 'arrow-b-th')"><h2>Завтрак</h2></div>
                                     <div class="arrow-intake" id="arrow-b-th" onclick="show_content('intake', 'monday', 'intake-b-th', 'arrow-b-th')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
                                 </div>
                                 <div class="breakfast-cont-2" id="intake-b-th">
                                     <div class="breakfast-dishes">
@@ -1067,6 +1077,7 @@
                                 <div class="lunch-cont-3">
                                     <div class="lunch-p"><h2>Обед</h2></div>
                                     <div class="arrow-intake" id="arrow-l-th" onclick="show_content('intake', '', 'intake-l-th', 'arrow-l-th')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
                                 </div>
                                 <div class="lunch-cont-2" id="intake-l-th">
                                     <div class="lunch-dishes">
@@ -1152,6 +1163,7 @@
                                 <div class="dinner-cont-3">
                                     <div class="dinner-p"><h2>Ужин</h2></div>
                                     <div class="arrow-intake" id="arrow-d-th" onclick="show_content('intake', '', 'intake-d-th', 'arrow-d-th')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
                                 </div>
                                 <div class="dinner-cont-2" id="intake-d-th">
                                     <div class="dinner-dishes">
@@ -1245,8 +1257,9 @@
                         <div class="friday" id="friday" hidden>
                             <div class="breakfast-cont" id="breakfast-cont">
                                 <div class="breakfast-cont-3">
-                                    <div class="breakfast-p"><h2>Завтрак</h2></div>
+                                    <div class="breakfast-p" id="" onclick="show_content('intake', '', 'intake-b-f', 'arrow-b-f')"><h2>Завтрак</h2></div>
                                     <div class="arrow-intake" id="arrow-b-f" onclick="show_content('intake', '', 'intake-b-f', 'arrow-b-f')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
                                 </div>
                                 <div class="breakfast-cont-2" id="intake-b-f">
                                     <div class="breakfast-dishes">
@@ -1357,6 +1370,8 @@
                                 <div class="lunch-cont-3">
                                     <div class="lunch-p"><h2>Обед</h2></div>
                                     <div class="arrow-intake" id="arrow-l-f" onclick="show_content('intake', '', 'intake-l-f', 'arrow-l-f')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
+
                                 </div>
                                 <div class="lunch-cont-2" id="intake-l-f">
                                     <div class="lunch-dishes">
@@ -1442,6 +1457,7 @@
                                 <div class="dinner-cont-3">
                                     <div class="dinner-p"><h2>Ужин</h2></div>
                                     <div class="arrow-intake" id="arrow-d-f" onclick="show_content('intake', '', 'intake-d-f', 'arrow-d-f')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
                                 </div>
                                 <div class="dinner-cont-2" id="intake-d-f">
                                     <div class="dinner-dishes">
@@ -1535,8 +1551,9 @@
                         <div class="saturday" id="saturday" hidden>    
                             <div class="breakfast-cont" id="breakfast-cont">
                                 <div class="breakfast-cont-3">
-                                    <div class="breakfast-p"><h2>Завтрак</h2></div>
+                                    <div class="breakfast-p" onclick="show_content('intake', '', 'intake-b-s', 'arrow-b-s')"><h2>Завтрак</h2></div>
                                     <div class="arrow-intake" id="arrow-b-s" onclick="show_content('intake', '', 'intake-b-s', 'arrow-b-s')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
                                 </div>
                                 <div class="breakfast-cont-2" id="intake-b-s">
                                     <div class="breakfast-dishes">
@@ -1647,6 +1664,7 @@
                                 <div class="lunch-cont-3">
                                     <div class="lunch-p"><h2>Обед</h2></div>
                                     <div class="arrow-intake" id="arrow-l-s" onclick="show_content('intake', '', 'intake-l-s', 'arrow-l-s')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
                                 </div>
                                 <div class="lunch-cont-2" id="intake-l-s">
                                     <div class="lunch-dishes">
@@ -1732,6 +1750,7 @@
                                 <div class="dinner-cont-3">
                                     <div class="dinner-p"><h2>Ужин</h2></div>
                                     <div class="arrow-intake" id="arrow-d-s" onclick="show_content('intake', '', 'intake-d-s', 'arrow-d-s')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
                                 </div>
                                 <div class="dinner-cont-2" id="intake-d-s">
                                     <div class="dinner-dishes">
@@ -1825,8 +1844,9 @@
                         <div class="sunday" id="sunday" hidden>
                             <div class="breakfast-cont">
                                 <div class="breakfast-cont-3">
-                                    <div class="breakfast-p"><h2>Завтрак</h2></div>
+                                    <div class="breakfast-p" onclick="show_content('intake', '', 'intake-b-su', 'arrow-b-su')"><h2>Завтрак</h2></div>
                                     <div class="arrow-intake" id="arrow-b-su" onclick="show_content('intake', '', 'intake-b-su', 'arrow-b-su')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
                                 </div>
                                 <div class="breakfast-cont-2" id="intake-b-su">
                                     <div class="breakfast-dishes">
@@ -1937,6 +1957,7 @@
                                 <div class="lunch-cont-3">
                                     <div class="lunch-p"><h2>Обед</h2></div>
                                     <div class="arrow-intake" id="arrow-l-su" onclick="show_content('intake', '', 'intake-l-su', 'arrow-l-su')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
                                 </div>
                                 <div class="lunch-cont-2" id="intake-l-su">
                                     <div class="lunch-dishes">
@@ -2022,6 +2043,7 @@
                                 <div class="dinner-cont-3">
                                     <div class="dinner-p"><h2>Ужин</h2></div>
                                     <div class="arrow-intake" id="arrow-d-su" onclick="show_content('intake', '', 'intake-d-su', 'arrow-d-su')"></div>
+                                    <div class="sum-of-calories" id="sumOfCalories"></div>
                                 </div>
                                 <div class="dinner-cont-2" id="intake-d-su">
                                     <div class="dinner-dishes">
