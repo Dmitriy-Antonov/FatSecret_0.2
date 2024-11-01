@@ -307,7 +307,7 @@ input {
 
 .title-of-dish {
     width: 200px;
-    height: 20px;
+    height: 37px;
     margin-bottom: 20px;
 }
 
@@ -353,11 +353,8 @@ input {
 }
 
 .breakfast-cont-3 {
-    width: 1260px;
     display: flex;
 }
-
-
 
 .breakfast-dishes {
     width: 1200px;
@@ -416,7 +413,6 @@ input {
     display: flex;
     justify-content: space-between;
     display: none;
-    margin-top: 10px;
 }
 
 .dinner-cont-3 {
@@ -425,16 +421,18 @@ input {
 
 .dinner-dishes {
     width: 1200px;
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     gap: 50px 1px;
     justify-content: space-between;
-}
-
-.dinner-dishes div {
-    margin-bottom: 10px;
     text-align: center;
 }
+
+/* .dinner-dishes div {
+    margin-bottom: 10px;
+    text-align: center;
+} */
 
 /* Блюда */
 

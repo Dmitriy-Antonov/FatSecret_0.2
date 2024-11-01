@@ -75,7 +75,7 @@ function calorie_calculation () {
         alert ("Вы не указали Вашу цель!");
     }
 
-    alert(result);
+    alert(parseInt(result));
 
     let breakfastCalories = parseInt(result * 0.325);
     let lunchCalories = parseInt(result * 0.40);
@@ -119,12 +119,12 @@ function show_content(type, day, intake, arrownum) {
     }
 }
 
-let kaloriesOfIntake = 0;
+// let kaloriesOfIntake = 0;
 
-function total_kalories(id, nutritional) {
-    let grams = document.getElementById(id).value;
+// function total_kalories(id, nutritional) {
+//     let grams = document.getElementById(id).value;
 
-    return kaloriesOfIntake = grams * nutritional;
-}
+//     return kaloriesOfIntake = grams * nutritional;
+// }
 
-let sumOfCalories = document.getElementById('sumOfCalories');
+// let sumOfCalories = document.getElementById('sumOfCalories');
